@@ -138,3 +138,56 @@
       color: #9ca3af;
       margin-bottom: 2rem;
     }
+
+    /* Barra de navegación */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #1f2937; /* Color texto */
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.main-nav a:hover {
+  background-color: #e5e7eb;
+}
+
+.main-nav a.active {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+/* Contenedor específico para el CV */
+.cv-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Contenedor del PDF */
+.pdf-wrapper {
+  width: 100%;
+  height: 0;
+  padding-bottom: 120%; /* Ajusta la proporción vertical que quieras */
+  position: relative;
+}
+
+.pdf-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
